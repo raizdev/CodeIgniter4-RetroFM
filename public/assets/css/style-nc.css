@@ -1,0 +1,95 @@
+:root {
+    --nav-background: #1a1a1a;
+    --nav-border: #171717;
+    --nav-items: #6f7c84;
+    --nav-items-icons: #bbc5ca;
+    --nav-dropdown-background: #FFF;
+    --nav-dropdown-font: #aaa;
+    --nav-dropdown-hover-font: #FFF;
+    --feed-background: #151515;
+    --feed-tweets: #AAB2B8;
+    --background: #ECF0F1;
+    --news-font: #FFF;
+    --content-splitter: #D7DDDE;
+    --footer-background: #1a1a1a;
+    --footer-list-heading: #FFF;
+    --footer-list-font: #AAB2B8;
+    --footer-user-font: #9DA4AA;
+    --footer-user-motto: #4B565E;
+    --text-highlight: #FFF;
+    --player-background: #FFF;
+    --player-icon-background: #666;
+    --font-semibold: 500;
+}
+
+
+
+
+nav::before {
+    content: "";
+    background-image: -webkit-linear-gradient(top, #141414, #131313);
+    background-image: -moz-linear-gradient(top, #141414, #131313);
+    box-shadow: 0 1px #1f1f1f;
+}
+
+
+
+nav {
+    box-shadow: 0 3px #171717, 0 4px #0a0a0a;
+}
+
+.navbar-left > .nav-item:hover {
+    background-color: #242424;
+}
+
+
+/*.navbar-nav > .nav-item > .dropdown-menu > a.dropdown-item:hover:first-of-type {
+    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.06), inset 0 -1px rgb(173 30 33);
+}*/
+
+.footer-content::before {
+    background-image: -webkit-linear-gradient(top, #141414, #131313);
+    background-image: -moz-linear-gradient(top, #141414, #131313);
+    box-shadow: 0 1px #1f1f1f;
+}
+
+.online-user {
+    padding: 10px 0 30px;
+    box-shadow: inset 0 -1px #0a0a0a, inset 0 -4px #151515, 0 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 -1px #0a0a0a, inset 0 -4px #151515, 0 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 -1px #0a0a0a, inset 0 -4px #151515, 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+    background-color: var(--feed-background);
+    background-image: url(../../img/mask.png);
+}
+
+/*.navbar-nav > .nav-item > .dropdown-menu > a.dropdown-item:hover {
+    box-shadow: inset 0 1px #ac1c20, inset 0 2px rgb(183 43 46), inset 0 -3px rgba(0, 0, 0, 0.06), inset 0 -1px rgb(173 30 33)
+}
+
+.navbar-nav > .nav-item > .dropdown-menu > a.dropdown-item:hover:last-of-type {
+    box-shadow: inset 0 1px #ac1c20, inset 0 2px rgb(173 30 33);
+}*/
+
+
+
+/*body {
+    background-color: #950b0c;
+    background-image: url(../../img/xmas/bg.png), radial-gradient(ellipse at center top, #db484e, #af1f22 60%, rgb(107 86 22 / 0));
+}*/
+
+.header {
+    height: 400px;
+    background-color: #1346C5;
+    background-image: url(../../img/header_pattern1.png), radial-gradient(circle at center top, #0988E9, rgb(19,70,197) 60%, rgba(19,70,197,0)), url(../../img/header_pattern2.png);
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.25), inset 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.25), inset 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.25), inset 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.advent-color {
+	color: var(--christmas-highlight) !important;
+	transition: all .2s linear;
+}
