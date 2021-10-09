@@ -1,27 +1,25 @@
 <?php
-
 namespace App\Controllers;
 
 class News extends BaseController {
 
-    public function nummer($id = null){
+    public function __construct() {
+        $this->nieuwsModel = model('NieuwsModel');
+        $this->nieuwsReactieModel = model('NieuwsReactieModel');
+        $this->userModel = model('UserModel');
+    }
+  
+    public function nummer($id = null) {
 
-        $db = \Config\Database::connect();
-		$query = $db->table('habnet_nieuws')->where('id', $id)->get(1);
-        
-        foreach ($query->getResult() as $row) {
+        $nieuws = $this->nieuwsModel->find($id);
+        $nieuws->reacties = $this->nieuwsReactieModel->where('article_id', $id)->findAll();
             
-            $data = array(
-                'title'     =>  $row->titel,
-                'heading'   =>  $row->afbeelding,
-                'message'   =>  $row->tekst,
-                'author'    =>  $row->author
-            );
-
-		}
-
-    echo view('templates/header', $data);
-    echo view('pages/News', $data);
-    echo view('templates/footer');
+        foreach($nieuws->reacties as $reactions) {
+            $reactions->user = $this->userModel->find($reactions->user_id);
+        }
+      
+        echo view('templates/header');
+        echo view('pages/News', ['data' => $nieuws]);
+        echo view('templates/footer');
     }
 }
