@@ -13,7 +13,6 @@ class News extends BaseController {
 
         $nieuws = $this->nieuwsModel->find($id);
         $nieuws->author = $this->userModel->find($nieuws->author);
-      
         $nieuws->reacties = $this->nieuwsReactieModel->where('article_id', $id)->findAll();
             
         foreach($nieuws->reacties as $reactions) {
