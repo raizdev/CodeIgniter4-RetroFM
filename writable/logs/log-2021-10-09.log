@@ -1,0 +1,401 @@
+CRITICAL - 2021-10-09 06:53:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/circinus.dev/app/Controllers/BaseController.php(41): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(780): App\Controllers\BaseController->initController()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 06:54:53 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/circinus.dev/app/Controllers/BaseController.php(41): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(780): App\Controllers\BaseController->initController()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 06:54:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/circinus.dev/app/Controllers/BaseController.php(41): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(780): App\Controllers\BaseController->initController()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 06:55:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/circinus.dev/app/Controllers/BaseController.php(41): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(780): App\Controllers\BaseController->initController()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 06:55:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/circinus.dev/app/Controllers/BaseController.php(41): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(780): App\Controllers\BaseController->initController()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 06:55:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/circinus.dev/app/Controllers/BaseController.php(41): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(780): App\Controllers\BaseController->initController()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 06:57:50 --> Table 'meteor.habnet_nieuws' doesn't exist
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/app/Views/pages/login.php(6): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#8 /var/www/circinus.dev/app/Controllers/Users.php(44): view()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Users->index()
+#10 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-10-09 07:03:36 --> Undefined variable $data
+#0 /var/www/circinus.dev/app/Controllers/News.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:04:02 --> Undefined variable $heading
+#0 /var/www/circinus.dev/app/Views/pages/News.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(15): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 07:04:02 --> Undefined variable $heading
+#0 /var/www/circinus.dev/app/Views/pages/News.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(15): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 07:05:10 --> Undefined variable $title
+#0 /var/www/circinus.dev/app/Views/pages/News.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(15): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 07:13:06 --> Call to a member function findAll() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 07:13:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`article_id`)' at line 3
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(720): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/app/Models/NieuwsModel.php(19): CodeIgniter\Model->__call()
+#6 /var/www/circinus.dev/app/Controllers/News.php(13): App\Models\NiewsModel->getReactions()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 07:14:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`article_id`)' at line 3
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(720): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/app/Models/NieuwsModel.php(19): CodeIgniter\Model->__call()
+#6 /var/www/circinus.dev/app/Controllers/News.php(13): App\Models\NiewsModel->getReactions()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 07:14:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`article_id`)' at line 3
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(720): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/app/Models/NieuwsModel.php(19): CodeIgniter\Model->__call()
+#6 /var/www/circinus.dev/app/Controllers/News.php(13): App\Models\NiewsModel->getReactions()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 07:15:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`)' at line 3
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(720): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/app/Models/NieuwsModel.php(19): CodeIgniter\Model->__call()
+#6 /var/www/circinus.dev/app/Controllers/News.php(13): App\Models\NiewsModel->getReactions()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 07:15:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`)' at line 3
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(720): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/app/Models/NieuwsModel.php(19): CodeIgniter\Model->__call()
+#6 /var/www/circinus.dev/app/Controllers/News.php(13): App\Models\NiewsModel->getReactions()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 07:15:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`artiidcle_id`)' at line 3
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(720): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/app/Models/NieuwsModel.php(19): CodeIgniter\Model->__call()
+#6 /var/www/circinus.dev/app/Controllers/News.php(13): App\Models\NiewsModel->getReactions()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 07:15:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`article_id`)' at line 3
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(720): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/app/Models/NieuwsModel.php(19): CodeIgniter\Model->__call()
+#6 /var/www/circinus.dev/app/Controllers/News.php(13): App\Models\NiewsModel->getReactions()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 07:17:52 --> Column 'id' in order clause is ambiguous
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /var/www/circinus.dev/app/Controllers/News.php(12): CodeIgniter\BaseModel->find()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 07:18:06 --> Column 'id' in order clause is ambiguous
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Model.php(720): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/circinus.dev/app/Controllers/News.php(12): CodeIgniter\Model->__call()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-09 07:18:24 --> syntax error, unexpected token ";", expecting ")"
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:18:24 --> syntax error, unexpected token ";", expecting ")"
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:24:59 --> Attempt to read property "id" on string
+#0 /var/www/circinus.dev/app/Controllers/News.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:25:29 --> syntax error, unexpected token "echo", expecting "function" or "const"
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:25:41 --> Attempt to read property "id" on string
+#0 /var/www/circinus.dev/app/Controllers/News.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:25:46 --> Cannot access offset of type string on string
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 07:26:45 --> Undefined property: App\Controllers\News::$reactions
+#0 /var/www/circinus.dev/app/Controllers/News.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:26:55 --> Undefined property: App\Controllers\News::$reactions
+#0 /var/www/circinus.dev/app/Controllers/News.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:26:55 --> Undefined property: App\Controllers\News::$reactions
+#0 /var/www/circinus.dev/app/Controllers/News.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:28:32 --> Call to a member function find() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 07:29:18 --> Call to a member function where() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 07:31:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResults()
+#0 /var/www/circinus.dev/app/Controllers/News.php(14): App\Models\NiewsModel->getReactions()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:32:37 --> Call to undefined method App\Models\NiewsModel::getResult
+#0 /var/www/circinus.dev/app/Models/NieuwsModel.php(19): CodeIgniter\Model->__call()
+#1 /var/www/circinus.dev/app/Controllers/News.php(15): App\Models\NiewsModel->getReactions()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-10-09 07:42:01 --> Cannot declare class App\Models\NiewsModel, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-10-09 07:42:15 --> Call to undefined function App\Controllers\where()
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 07:42:28 --> Call to undefined function App\Controllers\where()
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 07:42:29 --> Call to undefined function App\Controllers\where()
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 07:43:39 --> syntax error, unexpected token "foreach"
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:43:48 --> Undefined variable $news
+#0 /var/www/circinus.dev/app/Controllers/News.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:46:26 --> Undefined variable $news
+#0 /var/www/circinus.dev/app/Controllers/News.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 07:48:37 --> Attempt to read property "username" on array
+#0 /var/www/circinus.dev/app/Views/pages/News.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(22): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 07:48:47 --> Undefined property: stdClass::$timestamp
+#0 /var/www/circinus.dev/app/Views/pages/News.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(22): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 07:49:21 --> Attempt to read property "username" on array
+#0 /var/www/circinus.dev/app/Views/pages/News.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(22): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

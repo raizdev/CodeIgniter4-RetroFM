@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 class NiewsModel extends \CodeIgniter\Model
@@ -14,5 +13,9 @@ class NiewsModel extends \CodeIgniter\Model
         parent::__construct(...$params);
         $this->db = \Config\Database::connect();
         $this->orderBy('id', 'desc');
+    }
+  
+    public function getReactions() {
+        return $this->table('habnet_nieuws_reacties');
     }
 }
