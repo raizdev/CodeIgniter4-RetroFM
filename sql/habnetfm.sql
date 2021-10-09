@@ -65,6 +65,24 @@ INSERT INTO `habnet_nieuws` (`id`, `titel`, `uitleg`, `tekst`, `afbeelding`, `au
 (1, 'Test', 'Testen van het uitleg', 'TEKSTEN VAN NIEUWS 1 NATUURLIJK', 'https://cdn.davidv053.nl/habnet/nieuws/VxT0uw1.jpg', 'Milan\r\n'),
 (2, 'Testen 2', 'Testen van het uitleg', 'TEKSTEN VAN NIEUWS 2', 'https://cdn.davidv053.nl/habnet/nieuws/carnaval_topstory.gif', 'Milan\r\n');
 
+-- ----------------------------
+-- Table structure for habnet_nieuws_reacties
+-- ----------------------------
+DROP TABLE IF EXISTS `habnet_nieuws_reacties`;
+CREATE TABLE `habnet_nieuws_reacties`  (
+  `id` int(11) NOT NULL,
+  `article_id` int(11) NULL DEFAULT NULL,
+  `message` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `user_id` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of habnet_nieuws_reacties
+-- ----------------------------
+INSERT INTO `habnet_nieuws_reacties` VALUES (1, 1, 'test', 2);
+INSERT INTO `habnet_nieuws_reacties` VALUES (2, 1, 'tassa', 2);
+
 -- --------------------------------------------------------
 
 --
