@@ -40,9 +40,7 @@ class Users extends BaseController
 			}
 		}
 
-		echo view('templates/header', $data);
 		echo view('pages/login');
-		echo view('templates/footer');
 	}
 
 	private function setUsersession($user){

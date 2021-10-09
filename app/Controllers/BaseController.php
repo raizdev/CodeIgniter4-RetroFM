@@ -35,28 +35,5 @@ class BaseController extends Controller
 	{
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
-
-		$db = \Config\Database::connect();
-		
-		$query = $db->table('users')->where('id', session()->get('id'))->get(1);
-		$builder = $db->table('users');
-		
-		foreach ($query->getResult() as $row) 
-		{
-			
-			$data = array(
-				'adminlogout' =>  $row->force_logoff,
-
-			);
-
-			if ($data['adminlogout'] == 1) 
-			{
-				$builder->set('force_logoff', '0');
-				$builder->where('id', session()->get('id'));
-				$builder->update();
-				session()->destroy();
-				return redirect()->to('/');
-			}
-		}
 	}
 }

@@ -8,6 +8,17 @@ class Auth implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
+    
+        $userModel = model('UserModel');
+
+        if(session()->get('isLoggedIn') && 
+           $userModel->find(session->get('id'))->adminlogout == 1) 
+        {
+            $userModel->set('force_logoff', '0')->update();
+            session()->destroy();
+            return redirect()->to('/');
+        }
+      
         // Do something here
         if(! session()->get('isLoggedIn')){
           return redirect()->to('/');

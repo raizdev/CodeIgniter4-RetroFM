@@ -399,3 +399,464 @@ CRITICAL - 2021-10-09 07:49:21 --> Attempt to read property "username" on array
 #7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
 #8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2021-10-09 12:31:28 --> Unmatched '}'
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 /var/www/circinus.dev/app/Controllers/Users.php(5): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(264): include_once('...')
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(767): class_exists()
+#8 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#9 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-10-09 12:41:52 --> Undefined variable $data
+#0 /var/www/circinus.dev/app/Views/pages/News.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Events.php(24): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Events->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 12:43:56 --> Call to a member function find() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Events->nummer()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 12:44:27 --> Undefined property: stdClass::$tekst
+#0 /var/www/circinus.dev/app/Views/pages/News.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Events.php(15): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Events->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 12:45:25 --> Undefined variable $heading
+#0 /var/www/circinus.dev/app/Views/pages/Events.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Events.php(15): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Events->nummer()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 12:51:45 --> Invalid file: templates/header.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/Users.php(43): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Users->index()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 12:52:26 --> Invalid file: templates/header.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/Users.php(43): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Users->index()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 12:52:28 --> Invalid file: templates/header.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/Users.php(43): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Users->index()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 12:52:29 --> Invalid file: templates/header.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/Users.php(43): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Users->index()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 12:54:05 --> Invalid file: base.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(230): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Users.php(43): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Users->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 12:54:05 --> Invalid file: base.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(230): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Users.php(43): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Users->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 16:32:30 --> Invalid file: pages/home.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 16:41:26 --> syntax error, unexpected token "foreach"
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 16:41:33 --> Undefined variable $news
+#0 /var/www/circinus.dev/app/Views/pages/home.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 16:41:47 --> Attempt to read property "news" on array
+#0 /var/www/circinus.dev/app/Views/pages/home.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 16:41:58 --> Attempt to read property "data" on array
+#0 /var/www/circinus.dev/app/Views/pages/home.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 16:42:32 --> next(): Argument #1 ($array) must be of type array, null given
+#0 /var/www/circinus.dev/app/Views/pages/home.php(8): next()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 16:48:09 --> Undefined property: stdClass::$afbeeling
+#0 /var/www/circinus.dev/app/Views/pages/home.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 16:48:46 --> Cannot use object of type stdClass as array
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 16:49:24 --> Attempt to modify property "afbeelding" on array
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 16:50:07 --> Undefined property: stdClass::$title
+#0 /var/www/circinus.dev/app/Views/pages/home.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 16:53:25 --> syntax error, unexpected token "}"
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 16:53:33 --> Object of class stdClass could not be converted to string
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 16:55:04 --> syntax error, unexpected token "foreach"
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 16:55:27 --> Object of class stdClass could not be converted to string
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 17:03:40 --> Undefined variable $info
+#0 /var/www/circinus.dev/app/Views/pages/home.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(16): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:12:44 --> Call to a member function count() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 17:13:04 --> Call to a member function countAll() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 17:13:07 --> Call to a member function CountAll() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 17:13:30 --> Call to a member function countAllResults() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 17:14:07 --> Call to a member function get() on null
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-09 17:17:30 --> Cannot use object of type stdClass as array
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Home.php(20): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 17:17:52 --> Cannot use object of type stdClass as array
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Home.php(20): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 17:17:57 --> Cannot use object of type stdClass as array
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /var/www/circinus.dev/app/Controllers/Home.php(20): view()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-09 17:18:23 --> Undefined variable $news
+#0 /var/www/circinus.dev/app/Views/pages/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(20): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:18:29 --> array_shift(): Argument #1 ($array) must be of type array, null given
+#0 /var/www/circinus.dev/app/Views/pages/home.php(15): array_shift()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/Home.php(20): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:23:56 --> Invalid file: templates/header.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/News.php(21): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 17:24:21 --> Invalid file: pages/news.php
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/News.php(21): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 17:28:04 --> Attempt to read property "author" on string
+#0 /var/www/circinus.dev/app/Controllers/News.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 17:28:20 --> Attempt to read property "author" on string
+#0 /var/www/circinus.dev/app/Controllers/News.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-09 17:29:20 --> Undefined variable $data
+#0 /var/www/circinus.dev/app/Views/pages/news.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(23): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:29:34 --> Array to string conversion
+#0 /var/www/circinus.dev/app/Views/pages/news.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(23): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:29:46 --> Attempt to read property "username" on array
+#0 /var/www/circinus.dev/app/Views/pages/news.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(23): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:29:57 --> Undefined property: stdClass::$authorauthor
+#0 /var/www/circinus.dev/app/Views/pages/news.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(23): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:30:41 --> syntax error, unexpected token ";"
+#0 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /var/www/circinus.dev/app/Controllers/News.php(23): view()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#4 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-09 17:31:57 --> Undefined variable $data
+#0 /var/www/circinus.dev/app/Views/pages/news.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(23): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:32:57 --> Undefined variable $data
+#0 /var/www/circinus.dev/app/Views/pages/news.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(23): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-09 17:33:23 --> Undefined array key "figure"
+#0 /var/www/circinus.dev/app/Views/pages/news.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(214): include('...')
+#2 /var/www/circinus.dev/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/circinus.dev/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /var/www/circinus.dev/app/Controllers/News.php(23): view()
+#5 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\News->item()
+#6 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/circinus.dev/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/circinus.dev/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

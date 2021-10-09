@@ -14,8 +14,4 @@ class NiewsModel extends \CodeIgniter\Model
         $this->db = \Config\Database::connect();
         $this->orderBy('id', 'desc');
     }
-  
-    public function getReactions() {
-        return $this->table('habnet_nieuws_reacties');
-    }
 }
