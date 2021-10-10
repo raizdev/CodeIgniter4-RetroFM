@@ -34,7 +34,10 @@ class Registration extends BaseController
 
             return redirect()->to('/');
         }else{
-            return redirect()->back()->with('errors', $this->validator)->withInput();
+            return redirect()->back()->with(
+                'errors', 
+                $this->validator->getErrors()
+            )->withInput();
         }
       }
   
