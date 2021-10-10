@@ -74,35 +74,6 @@
          </div>
       </div>
    </div>
-   <!-- MODAL: LOGIN -->
-   <div class="modal fade" id="login-form" tabindex="-1">
-      <div class="modal-dialog">
-         <div class="modal-content">
-            <div class="loginForm">
-               <h1>Hallo!</h1>
-               <p>Melde Dich bei HabMusic an, um alle Vorteile nutzen zu k&ouml;nnen.</p>
-               <form action="" method="POST" name="testform">
-                  <div class="form-group">
-                     <label>Habboname</label>
-                     <input type="text" name="login_name" class="form-control" placeholder="HabMusic">
-                     <i class="fas fa-user input-icon"></i>
-                  </div>
-                  <div class="form-group">
-                     <label>Passwort</label>
-                     <input type="password" name="login_pass" class="form-control" placeholder="****">
-                     <i class="fas fa-lock input-icon"></i>
-                  </div>
-                  <div class="custom-control custom-checkbox">
-                     <input name="save_login" type="checkbox" class="custom-control-input" id="saveLogin">
-                     <label class="custom-control-label" for="saveLogin">Angemeldet bleiben</label>
-                  </div>
-                  <button type="submit" class="btn btn-block btn-primary">Anmelden</button>
-               </form>
-            </div>
-            <p><a href="user/create">Ich habe noch keinen Account bei HabMusic</a></p>
-         </div>
-      </div>
-   </div>
    <!-- ./MODAL: LOGIN -->
    <div class="row">
       <div class="col-lg-12 col-md-12">

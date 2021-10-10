@@ -33,7 +33,12 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('logout', 'Users::logout');
 $routes->get('/news/read/(:num)', 'News::item/$1');
-$routes->match(['get', 'post'], 'register', 'Users::register', ['filter' => 'noauth']);
+$routes->get('/registration', 'Registration::index');
+$routes->get('/logout', 'Login::logout');
+
+$routes->post('/login', 'Login::authentication');
+$routes->post('/registration/create', 'Registration::create');
+
 $routes->match(['get', 'post'], 'verzoeken', 'Verzoeken::submit');
 $routes->match(['get','post'],'profile', 'Users::profile', ['filter' => 'auth']);
 $routes->get('djverzoeken', 'Verzoekendj::index', ['filter' => 'auth']);

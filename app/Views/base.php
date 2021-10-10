@@ -27,8 +27,9 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css?16151361337">
-    <link rel="stylesheet" href="/assets/css/style-nc.css?16151136332">
+    <link rel="stylesheet" href="/assets/css/style.css?161513161337">
+    <link rel="stylesheet" href="/assets/css/iziToast.css">
+    <link rel="stylesheet" href="/assets/css/style-nc.css?161151136332">
     <link rel="stylesheet" href="/assets/css/responsive.css?1615136332">
     <link rel="stylesheet" href="/assets/css/swipebox.css?1615136332">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -45,6 +46,29 @@
     <script src="/assets/js/sweetalert.min.js"></script>
 </head>
 <body>
+<!-- MODAL: LOGIN -->
+ <div class="modal fade" id="login-form" tabindex="-1">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="loginForm">
+             <h1>Hallo!</h1>
+             <p>Meld je aan bij Habnet om van alle voordelen gebruik te kunnen maken. </p>
+             <form action="/login" method="POST" name="testform">
+                <div class="form-group">
+                   <input type="text" name="username" class="form-control" placeholder="Habbonaam">
+                   <i class="fas fa-user input-icon"></i>
+                </div>
+                <div class="form-group">
+                   <input type="password" name="password" class="form-control" placeholder="****">
+                   <i class="fas fa-lock input-icon"></i>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary">Aanmelden</button>
+             </form>
+          </div>
+          <p><a href="/registration">Nog geen account? Maak account aan!</a></p>
+       </div>
+    </div>
+ </div>
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar">
@@ -116,13 +140,20 @@
                 </li>
             </ul>
         </div>
-        <ul class="navbar-right navbar-nav flex-row ml-auto">
-                          <li class="nav-item">
-                    <a class="nav-link" href="/teamspeak" style="font-size:15px">
-                        TeamSpeak: online
+        <?php if(isset($user)): ?>
+<ul class="navbar-right navbar-nav flex-row ml-auto">
+                <li class="nav-item dropdown show">
+                    <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <div class="nav-profile" style="margin-top: -10px; background-image: url(https://avatar.habnet.nl/avatarimage.php?figure=hr-<?= $user->look ?>&amp;head_direction=3&amp;action=wav)">
+                        </div>
                     </a>
+                    <div class="dropdown-menu show">
+                        <a class="dropdown-item" href="/user/<?= $user->username ?>">Profiel</a>
+                        <a class="dropdown-item" href="/logout">Uitloggen</a>
+                    </div>
                 </li>
                       </ul>
+          <?php endif ?>
     </div>
 </nav>
 <!-- ./NAV -->
@@ -136,10 +167,11 @@
                     <span>@HabMusic </span><span>Congratulations to getting official! <a href="https://twitter.com/Habbplus" target="_blank">@Habbplus</a> ♥️ <a href="https://t.co/lUP6O248AT" target="_blank">https://t.co/lUP6O248AT</a></span>
                 </p>
             </div>
+            <?php if(!isset($user)): ?>
             <div class="col-lg-3 col-12" id="feed-right">
                      <a data-toggle="modal" data-target="#login-form"><i class="fas fa-sign-in-alt"></i>Login</a>
-     <a href="/user/create"><i class="fas fa-user-plus"></i>Registrierung</a>
-   
+     <a href="/registration"><i class="fas fa-user-plus"></i>Registreren</a>
+            <?php endif ?>
             </div>
         </div>
     </div>
@@ -310,6 +342,21 @@ margin-left: -9px;
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="/assets/js/jquery.swipebox.js"></script>
+<script src="/assets/js/iziToast.js"></script>
+<script>
+    <?php 
+    if(session('errors') && is_array(session('errors'))) { foreach(array_slice(session('errors'), 0, 1) as $errors => $index) { ?>
+     iziToast.error({position: "topRight", timeout: 5000, icon: 'fa fa-check', title: 'Oops..', message: '<?php echo $index ?>'});  
+    <?php } }elseif(session('errors')) { ?>
+    iziToast.success({position: "topRight", timeout: 5000, icon: 'fa fa-check', title: 'Oops..', message: '<?php echo session('errors') ?>'});
+    <?php } ?>
+    <?php 
+    if(session('success') && is_array(session('success'))) { foreach(array_slice(session('success'), 0, 1) as $errors => $index) { ?>
+     iziToast.success({position: "topRight", timeout: 5000, icon: 'fa fa-check', title: 'Gelukt!', message: '<?php echo $index ?>'});  
+    <?php } } elseif(session('success')) { ?> 
+    iziToast.success({position: "topRight", timeout: 5000, icon: 'fa fa-check', title: 'Gelukt!', message: '<?php echo session('success') ?>'});
+    <?php } ?>
+</script>
 <script type="text/javascript">
     ;( function( $ ) {
 

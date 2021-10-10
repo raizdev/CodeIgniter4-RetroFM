@@ -1228,7 +1228,7 @@ nav::before {
 }
 
 .form-habbo {
-    background-image: url("../../img/default.png");
+    background-image: url("../../assets/img/default.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-color: #F6F6F6;
