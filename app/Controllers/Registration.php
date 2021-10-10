@@ -11,7 +11,7 @@ class Registration extends BaseController
     public function create()
     {     
         $rules = [
-            'username'  => 'required|min_length[4]|max_length[20]|pattern[[a-zA-Z0-9-=?!@:.]+]',
+            'username'  => 'required|min_length[4]|max_length[20]|pattern[[a-zA-Z0-9-=?!@:.]+]|is_unique[users.username]',
             'email'     => 'required|valid_email|is_unique[users.mail]',
             'password'  => 'required|min_length[6]',
             'password_confirmation'=> 'required|matches[password]'
