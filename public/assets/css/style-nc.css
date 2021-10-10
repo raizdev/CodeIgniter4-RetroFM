@@ -83,7 +83,7 @@ nav {
 .header {
     height: 400px;
     background-color: #1346C5;
-    background-image: url(../../img/header_pattern1.png), radial-gradient(circle at center top, #0988E9, rgb(19,70,197) 60%, rgba(19,70,197,0)), url(../../img/header_pattern2.png);
+    background-image: url(../../assets/img/header_pattern1.png), radial-gradient(circle at center top, #0988E9, rgb(19,70,197) 60%, rgba(19,70,197,0)), url(../../assets/img/header_pattern2.png);
     -webkit-box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.25), inset 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.25), inset 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.25), inset 0px 0px 0px 0px rgba(0, 0, 0, 0.25);

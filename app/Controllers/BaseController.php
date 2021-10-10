@@ -1,62 +1,41 @@
 <?php
 namespace App\Controllers;
 
-/**
- * Class BaseController
- *
- * BaseController provides a convenient place for loading components
- * and performing functions that are needed by all your controllers.
- * Extend this class in any new controllers:
- *     class Home extends BaseController
- *
- * For security be sure to declare any new methods as protected or private.
- *
- * @package CodeIgniter
- */
+use App\Models\UserModel;
 
 use CodeIgniter\Controller;
+use CodeIgniter\Files\Exceptions\FileNotFoundException;
+use CodeIgniter\HTTP\RequestInterface;
+use CodeIgniter\HTTP\Response;
+use CodeIgniter\HTTP\ResponseInterface;
 
-class BaseController extends Controller
+use Psr\Log\LoggerInterface;
+
+abstract class BaseController extends Controller
 {
-
-	/**
-	 * An array of helpers to be loaded automatically upon
-	 * class instantiation. These helpers will be available
-	 * to all other controllers that extend BaseController.
-	 *
-	 * @var array
-	 */
-	protected $helpers = [];
-	
-	/**
-	 * Constructor.
-	 */
-	public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)
-	{
-		// Do Not Edit This Line
-		parent::initController($request, $response, $logger);
-
-		$db = \Config\Database::connect();
-		
-		$query = $db->table('users')->where('id', session()->get('id'))->get(1);
-		$builder = $db->table('users');
-		
-		foreach ($query->getResult() as $row) 
-		{
-			
-			$data = array(
-				'adminlogout' =>  $row->force_logoff,
-
-			);
-
-			if ($data['adminlogout'] == 1) 
-			{
-				$builder->set('force_logoff', '0');
-				$builder->where('id', session()->get('id'));
-				$builder->update();
-				session()->destroy();
-				return redirect()->to('/');
-			}
-		}
-	}
+    protected $session;
+    protected $user;
+  
+    public function __construct()
+    {
+    }
+  
+    public function __deconstruct() 
+    {
+        echo 1;
+        exit;
+    }
+  
+    public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)
+    {
+        parent::initController($request, $response, $logger);
+      
+        $this->session = \Config\Services::session();
+        $this->validate = \Config\Services::validation();
+      
+        if ($this->session->has('user')) { 
+            $view = service('renderer');
+            $view->setVar('user', (new UserModel())->find($this->session->get('user')->id));
+        }
+    }
 }

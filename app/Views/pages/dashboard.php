@@ -1,3 +1,5 @@
+<?= $this->extend('base') ?>
+
 <div class="content container">
 	<div class="news row no-gutters">
 		<?php

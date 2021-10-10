@@ -9,17 +9,16 @@ class News extends BaseController {
         $this->userModel = model('UserModel');
     }
   
-    public function nummer($id = null) {
+    public function item($id = null) {
 
         $nieuws = $this->nieuwsModel->find($id);
+        $nieuws->author = $this->userModel->find($nieuws->author);
         $nieuws->reacties = $this->nieuwsReactieModel->where('article_id', $id)->findAll();
             
         foreach($nieuws->reacties as $reactions) {
             $reactions->user = $this->userModel->find($reactions->user_id);
         }
       
-        echo view('templates/header');
-        echo view('pages/News', ['data' => $nieuws]);
-        echo view('templates/footer');
+        echo view('pages/news', ['news' => $nieuws]);
     }
 }

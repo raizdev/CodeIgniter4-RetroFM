@@ -40,9 +40,7 @@ class Users extends BaseController
 			}
 		}
 
-		echo view('templates/header', $data);
 		echo view('pages/login');
-		echo view('templates/footer');
 	}
 
 	private function setUsersession($user){
@@ -91,9 +89,7 @@ class Users extends BaseController
 			}
 		}
 
-		echo view('templates/header', $data);
-		echo view('pages/register');
-		echo view('templates/footer');
+        echo view('pages/register');
 	}
 
 	//--------------------------------------------------------------------
