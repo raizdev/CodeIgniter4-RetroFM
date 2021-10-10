@@ -44,26 +44,28 @@ INSERT INTO `habnet_events` (`id`, `titel`, `verhaal`, `afbeelding`, `author`) V
 
 -- --------------------------------------------------------
 
---
--- Tabelstructuur voor tabel `habnet_nieuws`
---
-
-CREATE TABLE `habnet_nieuws` (
+-- ----------------------------
+-- Table structure for habnet_nieuws
+-- ----------------------------
+DROP TABLE IF EXISTS `habnet_nieuws`;
+CREATE TABLE `habnet_nieuws`  (
   `id` int(20) NOT NULL,
-  `titel` varchar(255) NOT NULL,
-  `uitleg` varchar(255) NOT NULL,
-  `tekst` varchar(255) NOT NULL,
-  `afbeelding` varchar(255) NOT NULL,
-  `author` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `titel` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `uitleg` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `tekst` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `afbeelding` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `author` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
---
--- Gegevens worden geëxporteerd voor tabel `habnet_nieuws`
---
-
-INSERT INTO `habnet_nieuws` (`id`, `titel`, `uitleg`, `tekst`, `afbeelding`, `author`) VALUES
-(1, 'Test', 'Testen van het uitleg', 'TEKSTEN VAN NIEUWS 1 NATUURLIJK', 'https://cdn.davidv053.nl/habnet/nieuws/VxT0uw1.jpg', 'Milan\r\n'),
-(2, 'Testen 2', 'Testen van het uitleg', 'TEKSTEN VAN NIEUWS 2', 'https://cdn.davidv053.nl/habnet/nieuws/carnaval_topstory.gif', 'Milan\r\n');
+-- ----------------------------
+-- Records of habnet_nieuws
+-- ----------------------------
+INSERT INTO `habnet_nieuws` VALUES (1, 'Test', 'Testen van het uitleg', 'TEKSTEN VAN NIEUWS 1 NATUURLIJK', 'https://cdn.davidv053.nl/habnet/nieuws/VxT0uw1.jpg', '2');
+INSERT INTO `habnet_nieuws` VALUES (2, 'Testen 2', 'Testen van het uitleg', 'TEKSTEN VAN NIEUWS 2', 'https://cdn.davidv053.nl/habnet/nieuws/carnaval_topstory.gif', '2');
+INSERT INTO `habnet_nieuws` VALUES (3, 'Blabla', 'Testassaas', 'SAASSAASASSA', 'https://cdn.davidv053.nl/habnet/nieuws/VxT0uw1.jpg', '2');
+INSERT INTO `habnet_nieuws` VALUES (4, 'SASAS', 'SSASASAASAS', 'SASASSA', 'https://cdn.davidv053.nl/habnet/nieuws/carnaval_topstory.gif', '2');
+INSERT INTO `habnet_nieuws` VALUES (5, 'ASASSASA', 'ASASSA', 'ASSASASA', 'https://cdn.davidv053.nl/habnet/nieuws/carnaval_topstory.gif', '2');
 
 -- ----------------------------
 -- Table structure for habnet_nieuws_reacties
@@ -82,8 +84,6 @@ CREATE TABLE `habnet_nieuws_reacties`  (
 -- ----------------------------
 INSERT INTO `habnet_nieuws_reacties` VALUES (1, 1, 'test', 2);
 INSERT INTO `habnet_nieuws_reacties` VALUES (2, 1, 'tassa', 2);
-
--- --------------------------------------------------------
 
 --
 -- Tabelstructuur voor tabel `habnet_verzoeken`
