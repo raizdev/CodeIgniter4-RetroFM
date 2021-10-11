@@ -1,11 +1,11 @@
 <?php
 namespace App\Models;
 
-class NiewsModel extends \CodeIgniter\Model
+class NewsModel extends \CodeIgniter\Model
 {
 
     protected $primaryKey = 'id';
-    protected $table      = 'habnet_nieuws';
+    protected $table      = 'habnet_news';
     protected $returnType = 'object';
 
     public function __construct(...$params)

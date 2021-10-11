@@ -1,5 +1,7 @@
 <?php 
-namespace App\Controllers;
+namespace App\Controllers\Auth;
+
+use App\Controllers\BaseController;
 
 class Login extends BaseController
 {
@@ -26,12 +28,11 @@ class Login extends BaseController
                 'user', 
                 $user
             );
+        } else {
+            return redirect()->back()->with('errors', 'Foutief wachtwoord ingevuld!');
         }
       
-        return redirect()->back()->with(
-            'errors', 
-            $this->validator->getErrors()
-        )->withInput();
+        return redirect()->back()->with('errors', $this->validator->getErrors());
     }
   
     public function logout()

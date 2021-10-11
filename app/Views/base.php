@@ -53,7 +53,7 @@
           <div class="loginForm">
              <h1>Hallo!</h1>
              <p>Meld je aan bij Habnet om van alle voordelen gebruik te kunnen maken. </p>
-             <form action="/login" method="POST" name="testform">
+             <form action="/auth/login" method="POST" name="testform">
                 <div class="form-group">
                    <input type="text" name="username" class="form-control" placeholder="Habbonaam">
                    <i class="fas fa-user input-icon"></i>
@@ -149,7 +149,7 @@
                     </a>
                     <div class="dropdown-menu show">
                         <a class="dropdown-item" href="/user/<?= $user->username ?>">Profiel</a>
-                        <a class="dropdown-item" href="/logout">Uitloggen</a>
+                        <a class="dropdown-item" href="/auth/logout">Uitloggen</a>
                     </div>
                 </li>
                       </ul>
@@ -348,7 +348,7 @@ margin-left: -9px;
     if(session('errors') && is_array(session('errors'))) { foreach(array_slice(session('errors'), 0, 1) as $errors => $index) { ?>
      iziToast.error({position: "topRight", timeout: 5000, icon: 'fa fa-check', title: 'Oops..', message: '<?php echo $index ?>'});  
     <?php } }elseif(session('errors')) { ?>
-    iziToast.success({position: "topRight", timeout: 5000, icon: 'fa fa-check', title: 'Oops..', message: '<?php echo session('errors') ?>'});
+    iziToast.error({position: "topRight", timeout: 5000, icon: 'fa fa-check', title: 'Oops..', message: '<?php echo session('errors') ?>'});
     <?php } ?>
     <?php 
     if(session('success') && is_array(session('success'))) { foreach(array_slice(session('success'), 0, 1) as $errors => $index) { ?>
