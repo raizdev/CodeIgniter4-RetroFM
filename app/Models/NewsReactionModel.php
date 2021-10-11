@@ -1,11 +1,11 @@
 <?php
 namespace App\Models;
 
-class NieuwsReactieModel extends \CodeIgniter\Model
+class NewsReactionModel extends \CodeIgniter\Model
 {
 
     protected $primaryKey = 'id';
-    protected $table      = 'habnet_nieuws_reacties';
+    protected $table      = 'habnet_news_reactions';
     protected $returnType = 'object';
 
     public function __construct(...$params)

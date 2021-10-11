@@ -20,18 +20,12 @@ abstract class BaseController extends Controller
     {
     }
   
-    public function __deconstruct() 
-    {
-        echo 1;
-        exit;
-    }
   
     public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)
     {
         parent::initController($request, $response, $logger);
       
         $this->session = \Config\Services::session();
-        $this->validate = \Config\Services::validation();
       
         if ($this->session->has('user')) { 
             $view = service('renderer');

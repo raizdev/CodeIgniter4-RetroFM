@@ -1,34 +1,32 @@
-<?php namespace App\Filters;
+<?php 
+namespace App\Filters;
 
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Filters\FilterInterface;
 
-class Auth implements FilterInterface
+class LoginFilter implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-    
         $userModel = model('UserModel');
-
-        if(session()->get('isLoggedIn') && 
-           $userModel->find(session->get('id'))->adminlogout == 1) 
+      
+        if(session()->has('user') && 
+           $userModel->find(session()->get('user')->id)->force_logoff == 1) 
         {
             $userModel->set('force_logoff', '0')->update();
             session()->destroy();
             return redirect()->to('/');
         }
       
-        // Do something here
-        if(! session()->get('isLoggedIn')){
-          return redirect()->to('/');
+        if(!session()->has('user')){
+            return redirect()->to('/');
         }
     }
 
-    //--------------------------------------------------------------------
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        // Do something here
+
     }
 }
