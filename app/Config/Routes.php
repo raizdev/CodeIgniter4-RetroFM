@@ -30,7 +30,6 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-
 $routes->get('/', 'Home::index');
 $routes->get('logout', 'Users::logout');
 $routes->get('/news/read/(:num)', 'News::item/$1');
@@ -40,10 +39,11 @@ $routes->get('/logout', 'Login::logout');
 $routes->post('/login', 'Login::authentication');
 $routes->post('/registration/create', 'Registration::create');
 
-//$routes->match(['get', 'post'], 'verzoeken', 'Verzoeken::submit');
-//$routes->get('djverzoeken', 'Verzoekendj::index', ['filter' => 'auth']);
-//$routes->match(['get','post'],'Admin', 'Admin::gebruiker', ['filter' => 'auth']);
-//$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
+$routes->match(['get', 'post'], 'verzoeken', 'Verzoeken::submit');
+$routes->match(['get','post'],'profile', 'Users::profile', ['filter' => 'auth']);
+$routes->get('djverzoeken', 'Verzoekendj::index', ['filter' => 'auth']);
+$routes->match(['get','post'],'Admin', 'Admin::gebruiker', ['filter' => 'auth']);
+$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
 
 
 

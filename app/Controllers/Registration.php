@@ -43,6 +43,6 @@ class Registration extends BaseController
   
     public function index() 
     {
-        echo view('pages/auth/register');
+        echo view('pages/register');
     }
 }

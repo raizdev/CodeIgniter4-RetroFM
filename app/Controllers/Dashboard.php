@@ -5,6 +5,6 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        echo view('pages/session/dashboard');
+        echo view('pages/dashboard');
     }
 }
