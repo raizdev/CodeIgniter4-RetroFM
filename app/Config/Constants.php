@@ -13,6 +13,14 @@
 //
 defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
 
+if(isset($_SERVER['HTTP_HOST'])) {
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'] : 'http://'.$_SERVER['HTTP_HOST'];
+    defined('BASE') || define('BASE',$protocol);
+} else {
+    defined('BASE') || define('BASE', 'http://localhost:8080/');
+}
+
+
 /*
 |--------------------------------------------------------------------------
 | Composer Path
