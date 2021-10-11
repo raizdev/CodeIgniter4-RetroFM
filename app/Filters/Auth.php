@@ -11,8 +11,8 @@ class Auth implements FilterInterface
     
         $userModel = model('UserModel');
 
-       if(session()->has('user') && 
-           $userModel->find(session->get('user')->adminlogout) == 1)
+        if(session()->get('isLoggedIn') && 
+           $userModel->find(session->get('id'))->adminlogout == 1) 
         {
             $userModel->set('force_logoff', '0')->update();
             session()->destroy();
