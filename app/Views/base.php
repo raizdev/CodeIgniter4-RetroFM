@@ -169,8 +169,8 @@
             </div>
             <?php if(!isset($user)): ?>
             <div class="col-lg-3 col-12" id="feed-right">
-                     <a data-toggle="modal" data-target="#login-form"><i class="fas fa-sign-in-alt"></i>Login</a>
-     <a href="/registration"><i class="fas fa-user-plus"></i>Registreren</a>
+                     <a data-toggle="modal" data-target="#login-form"><i class="fas fa-sign-in-alt"></i><?= lang('Site.header.login') ?></a>
+     <a href="/registration"><i class="fas fa-user-plus"></i><?= lang('Site.header.register') ?></a>
             <?php endif ?>
             </div>
         </div>

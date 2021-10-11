@@ -29,7 +29,7 @@ class Login extends BaseController
                 $user
             );
         } else {
-            return redirect()->back()->with('errors', 'Foutief wachtwoord ingevuld!');
+            return redirect()->back()->with('errors', lang('Site.validation.login'));
         }
       
         return redirect()->back()->with('errors', $this->validator->getErrors());
