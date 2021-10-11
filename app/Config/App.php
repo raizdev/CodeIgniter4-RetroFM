@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'https://circinus.dev/';
+	public $baseURL = 'http://localhost:8080';
 
 	/*
 	|--------------------------------------------------------------------------

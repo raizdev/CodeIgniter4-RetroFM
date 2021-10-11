@@ -17,6 +17,6 @@ class Home extends BaseController {
             $news->reactionsCount = $this->nieuwsReactieModel->where('article_id', $news->id)->countAllResults();
         }
       
-        echo view('pages/home', ['news' => $this->news]);
+        echo view('pages/general/home', ['news' => $this->news]);
     }
 }
