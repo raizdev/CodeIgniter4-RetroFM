@@ -5,7 +5,7 @@
       <div class="col-lg-8">
          <div class="news-body">
             <div class="news-header" style="background-image: url(<?= $news->afbeelding ?>)">
-               <h1<?= $news->titel ?></h1>
+               <h1><?= $news->titel ?></h1>
                <p>09. Oktober 2021</p>
                <div class="news-author">
                   <div class="badge-name">
