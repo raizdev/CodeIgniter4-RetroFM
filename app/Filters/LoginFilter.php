@@ -18,15 +18,14 @@ class LoginFilter implements FilterInterface
             session()->destroy();
             return redirect()->to('/');
         }
-      
+
         if(!session()->has('user')){
             return redirect()->to('/');
         }
     }
 
-
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
-    {
-
+    { 
+        
     }
 }

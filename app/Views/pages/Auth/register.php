@@ -8,7 +8,7 @@
       <div class="col-lg-8 col-md-12 content-left">
          <div class="content-box">
             <div class="content-header">
-               <h1>Registreer een account</h1>
+               <h1>Register An Account</h1>
             </div>
             <div class="content-body clearfix">
                <form action="/registration/create" method="post" class="form-no-captions" autocomplete="off">
@@ -17,7 +17,7 @@
                      <div class="input-group-prepend">
                         <span class="input-group-text form-habbo"></span>
                      </div>
-                     <input type="text" name="username" class="form-control" placeholder="Habbonaam" autocomplete="off">
+                     <input type="text" name="username" class="form-control" placeholder="FMname" autocomplete="off">
                   </div>
                   <div class="input-group">
                      <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off">
@@ -29,7 +29,7 @@
                      <input type="email" name="email" class="form-control" placeholder="E-mail" autocomplete="off">
                   </div>
                   <div class="cf"></div>
-                  <button type="submit" class="btn btn-blue btn-rounded" style="margin: 3px 0 0 0;">Maak mijn account aan</button>
+                  <button type="submit" class="btn btn-blue btn-rounded" style="margin: 3px 0 0 0;">Create My Account</button>
                </form>
             </div>
          </div>
@@ -37,6 +37,15 @@
       <!-- ./CONTENT: LEFT -->
       <!-- CONTENT: RIGHT -->
       <div class="col-lg-4 col-md-12 content-right">
+      <div class="content-box">
+            <div class="content-header">
+               <h1>Form Information</h1>
+            </div>
+            <div class="content-body clearfix">
+            
+               
+            </div>
+         </div>
       </div>
       <!-- ./CONTENT: RIGHT -->
    </div>
