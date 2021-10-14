@@ -146,7 +146,9 @@
                     <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         <div class="nav-profile" style="margin-top: -10px; background-image: url(https://avatar.habnet.nl/avatarimage.php?figure=hr-<?= $user->look ?>&amp;head_direction=3&amp;action=wav)">
                         </div>
+                        
                     </a>
+                    <p style="font-size: small; color: white;"><?= $user->username  ?></p>
                     <div class="dropdown-menu show">
                         <a class="dropdown-item" href="/user/<?= $user->username ?>">Profiel</a>
                         <a class="dropdown-item" href="/auth/logout">Uitloggen</a>

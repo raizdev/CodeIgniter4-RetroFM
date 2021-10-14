@@ -21,6 +21,7 @@ class News extends BaseController {
             $reactions->user = $this->userModel->find($reactions->user_id);
         }
       
+
         echo view('pages/community/news', ['news' => $nieuws]);
     }
 }
