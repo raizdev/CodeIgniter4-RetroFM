@@ -44,7 +44,7 @@ $routes->group('', ['filter' => 'LoginFilter'], function ($routes) {
     $routes->get('/auth/logout', 'Auth\Login::logout');
 });
   
-$routes->group('admin', ['filter' => 'PermissionFilter', 'filter' => 'LoginFilter'], function ($routes) {
+$routes->group('admin', ['filter' => 'PermissionFilter'], function ($routes) {
     $routes->add('users/(:any)', 'Admin\User::getUser/$1');
 });
 

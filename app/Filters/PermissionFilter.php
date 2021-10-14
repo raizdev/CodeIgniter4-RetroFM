@@ -15,7 +15,7 @@ class PermissionFilter implements FilterInterface
       
         if (!$permission->hasPermissionForUser(
             $user->find(session()->get('user')->id)->rank, 
-            uri_string(true))
+            service('router')->controllerName())
         ) {
             return redirect()->to('/');
         }

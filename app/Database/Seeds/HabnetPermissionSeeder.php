@@ -12,7 +12,7 @@ class HabnetPermissionSeeder extends Seeder
                     'id'      => 1,
                     'ptype'   => 'p',
                     'v0'      => 7,
-                    'v1'      => 'admin/users'
+                    'v1'      => '\App\Controllers\Admin\User'
                 ]
             ];
 
