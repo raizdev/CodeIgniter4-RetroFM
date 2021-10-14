@@ -30,20 +30,23 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
 $routes->get('/', 'Home\Home::index');
-$routes->get('/auth/logout', 'Auth\Login::logout');
-$routes->get('/news/read/(:num)', 'Community\News::item/$1');
-$routes->get('/registration', 'Auth\Registration::index');
+$routes->get('/article/read/(:num)/(:any)', 'Community\News::item/$1');
 
-$routes->post('/auth/login', 'Auth\Login::authentication');
-$routes->post('/registration/create', 'Auth\Registration::create');
-
-$routes->match(['get', 'post'], 'verzoeken', 'Verzoeken::submit');
-$routes->match(['get','post'],'profile', 'Users::profile', ['filter' => 'auth']);
-$routes->get('djverzoeken', 'Verzoekendj::index', ['filter' => 'auth']);
-$routes->match(['get','post'],'Admin', 'Admin::gebruiker', ['filter' => 'auth']);
-$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
-
+$routes->group('', ['filter' => 'GuestFilter'], function ($routes) {
+    $routes->post('/auth/login', 'Auth\Login::authentication');
+    $routes->get('/registration', 'Auth\Registration::index');
+    $routes->post('/registration/create', 'Auth\Registration::create');
+});
+               
+$routes->group('', ['filter' => 'LoginFilter'], function ($routes) {
+    $routes->get('/auth/logout', 'Auth\Login::logout');
+});
+  
+$routes->group('admin', ['filter' => 'PermissionFilter', 'filter' => 'LoginFilter'], function ($routes) {
+    $routes->add('users/(:any)', 'Admin\User::getUser/$1');
+});
 
 
 /**

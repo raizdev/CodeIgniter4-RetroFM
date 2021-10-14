@@ -9,7 +9,9 @@ class Filters extends BaseConfig
         'csrf'        => \CodeIgniter\Filters\CSRF::class,
         'toolbar'     => \CodeIgniter\Filters\DebugToolbar::class,
         'honeypot'    => \CodeIgniter\Filters\Honeypot::class,
-        'LoginFilter' => \App\Filters\LoginFilter::class
+        'LoginFilter' => \App\Filters\LoginFilter::class,
+        'PermissionFilter' => \App\Filters\PermissionFilter::class,
+        'GuestFilter' => \App\Filters\GuestFilter::class
     ];
 
 
