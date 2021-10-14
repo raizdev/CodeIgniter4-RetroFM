@@ -12,10 +12,9 @@ class PermissionFilter implements FilterInterface
         $user = model('UserModel');
       
         $permission = \Config\Services::enforcer();
-        $session = \Config\Services::session();
       
         if (!$permission->hasPermissionForUser(
-            $user->find($session->get('user')->id)->rank, 
+            $user->find(session()->get('user')->id)->rank, 
             uri_string(true))
         ) {
             return redirect()->to('/');
