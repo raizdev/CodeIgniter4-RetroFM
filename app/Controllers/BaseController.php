@@ -26,6 +26,7 @@ abstract class BaseController extends Controller
         parent::initController($request, $response, $logger);
       
         $this->session = \Config\Services::session();
+        $this->role = \Config\Services::enforcer();
       
         if ($this->session->has('user')) { 
             $view = service('renderer');

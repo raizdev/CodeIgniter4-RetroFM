@@ -38,12 +38,9 @@ $routes->get('/registration', 'Auth\Registration::index');
 $routes->post('/auth/login', 'Auth\Login::authentication');
 $routes->post('/registration/create', 'Auth\Registration::create');
 
-$routes->match(['get', 'post'], 'verzoeken', 'Verzoeken::submit');
-$routes->match(['get','post'],'profile', 'Users::profile', ['filter' => 'auth']);
-$routes->get('djverzoeken', 'Verzoekendj::index', ['filter' => 'auth']);
-$routes->match(['get','post'],'Admin', 'Admin::gebruiker', ['filter' => 'auth']);
-$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
-
+$routes->group('admin', ['filter' => 'PermissionFilter'], function ($routes) {
+    $routes->add('/', 'Admin\Dashboard::index');
+});
 
 
 /**
