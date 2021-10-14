@@ -9,9 +9,17 @@ class PermissionFilter implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        echo '<pre>';
-        print_r($request);
-        exit;
+        $user = model('UserModel');
+      
+        $permission = \Config\Services::enforcer();
+        $session = \Config\Services::session();
+      
+        if (!$permission->hasPermissionForUser(
+            $user->find($session->get('user')->id)->rank, 
+            uri_string(true))
+        ) {
+            return redirect()->to('/');
+        }
     }
 
 

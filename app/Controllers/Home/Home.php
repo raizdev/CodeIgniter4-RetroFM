@@ -13,12 +13,12 @@ class Home extends BaseController {
   
     public function index($id = null) {
 
-        $this->news = $this->newsModel->findAll();
+        $this->news = $this->newsModel->orderBy('id', 'desc')->findAll(4);
       
         foreach($this->news as $news) {
             $news->reactionsCount = $this->newsReactionModel->where('article_id', $news->id)->countAllResults();
         }
       
-        echo view('pages/Home/home', ['news' => $this->news]);
+        echo view('pages/home/home', ['news' => $this->news]);
     }
 }

@@ -39,7 +39,7 @@ class Enforcer extends BaseConfig
             'connection' => '',
 
             // Rule table name.
-            'rules_table' => 'website_permissions',
+            'rules_table' => 'habnet_permissions',
         ],
 
         'log' => [

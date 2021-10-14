@@ -10,7 +10,8 @@ class Filters extends BaseConfig
         'toolbar'     => \CodeIgniter\Filters\DebugToolbar::class,
         'honeypot'    => \CodeIgniter\Filters\Honeypot::class,
         'LoginFilter' => \App\Filters\LoginFilter::class,
-        'PermissionFilter' => \App\Filters\PermissionFilter::class
+        'PermissionFilter' => \App\Filters\PermissionFilter::class,
+        'GuestFilter' => \App\Filters\GuestFilter::class
     ];
 
 

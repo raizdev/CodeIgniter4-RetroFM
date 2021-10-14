@@ -4,9 +4,9 @@
    <div class="news row no-gutters">
       <div class="col-lg-8">
          <div class="news-body">
-            <div class="news-header" style="background-image: url(<?= $news->afbeelding ?>)">
-               <h1><?= $news->titel ?></h1>
-               <p>09. Oktober 2021</p>
+            <div class="news-header" style="background-image: url(<?= $news->image ?>)">
+               <h1><?= $news->title ?></h1>
+               <p><?= $news->timestamp ?></p>
                <div class="news-author">
                   <div class="badge-name">
                      <img class="user-icon" src="img/icon/duck.gif" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quack!">
@@ -15,9 +15,9 @@
                </div>
             </div>
             <div class="news-text">
-               <p style="text-align:center"><em><?= $news->uitleg ?></em></p>
+               <p style="text-align:center"><em><?= $news->short_story ?></em></p>
                <hr>
-               <?= $news->tekst ?>
+               <?= $news->full_story ?>
             </div>
          </div>
       </div>

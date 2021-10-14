@@ -2,57 +2,17 @@
 <?= $this->section('content') ?>
 <div class="topnews container">
    <div class="row">
-      <?php list($first, $second, $third, $fourth, $fifth) = $news; ?>
-      <div class="news-col col-lg-4">
-         <a href="/news/read/<?= $first->id ?>">
-            <div class="news-big" style="background-image: url(<?= $first->afbeelding ?>)">
-               <div class="news-cmts"><?= $first->reactionsCount ?></div>
+      <?php foreach($news as $item) { ?>
+      <div class="news-col col-lg-3">
+         <a href="/article/read/<?= $item->id ?>/<?= $item->slug ?>">
+            <div class="news-big" style="background-image: url(<?= $item->image ?>)">
+               <div class="news-cmts"><?= $item->reactionsCount ?></div>
                <div class="news-ntfy">NIEUW</div>
-               <div class="news-title"><?= $first->titel ?></div>
+               <div class="news-title"><?= $item->title ?></div>
             </div>
          </a>
       </div>
-      <?php array_shift($news) ?>
-      <div class="news-col col-lg-4">
-         <?php for ($i = 0; $i < 2; $i++){ ?>
-         <?php if($i == 0) { ?>
-         <a href="/news/read/<?= $second->id ?>">
-            <div class="news-small" style="background-image: url(<?= $second->afbeelding ?>)">
-               <div class="news-cmts"><?= $first->reactionsCount ?></div>
-               <div class="news-title"><?= $second->titel ?></div>
-            </div>
-         </a>
-         <?php } ?>
-         <?php if($i == 1) { ?>
-         <a href="/news/read/<?= $third->id ?>">
-            <div class="news-small" style="background-image: url(<?= $third->afbeelding ?>)">
-               <div class="news-cmts"><?= $first->reactionsCount ?></div>
-               <div class="news-title"><?= $third->titel ?></div>
-            </div>
-         </a>
-         <?php } ?> 
-         <?php } ?>
-      </div>
-      <div class="news-col col-lg-4">
-         <?php for ($i = 2; $i < 4; $i++){ ?>
-         <?php if($i == 2) { ?>
-         <a href="/news/read/<?= $fourth->id ?>">
-            <div class="news-small" style="background-image: url(<?= $fourth->afbeelding ?>)">
-               <div class="news-cmts"><?= $first->reactionsCount ?></div>
-               <div class="news-title"><?= $fourth->titel ?></div>
-            </div>
-         </a>
-         <?php } ?>
-         <?php if($i == 3) { ?>
-         <a href="/news/read/<?= $fifth->id ?>">
-            <div class="news-small" style="background-image: url(<?= $fifth->afbeelding ?>)">
-               <div class="news-cmts"><?= $fifth->reactionsCount ?></div>
-               <div class="news-title"><?= $fifth->titel ?></div>
-            </div>
-         </a>
-         <?php } ?> 
-         <?php } ?>
-      </div>
+      <?php } ?>
    </div>
 </div>
 <div class="content container">
